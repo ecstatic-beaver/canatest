@@ -76,8 +76,8 @@
                 </a>
                 
                 <!-- CTA Button -->
-                <div class="flex items-center space-x-2">
-                    <a href="httpsa://play.google.com/store/apps/details?id=com.canatest.citizenship" target="_blank" rel="noopener noreferrer" 
+                <div class="hidden sm:flex items-center space-x-2">
+                    <a href="https://play.google.com/store/apps/details?id=com.canatest.citizenship" target="_blank" rel="noopener noreferrer" 
                        class="bg-brand-red text-white font-semibold py-2 px-5 rounded-full shadow-lg transition-transform hover:scale-105 duration-200 ease-in-out text-sm">
                         Get for Android
                     </a>
@@ -102,17 +102,36 @@
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="httpsa://play.google.com/store/apps/details?id=com.canatest.citizenship" target="_blank" rel="noopener noreferrer"
-                       class="flex items-center justify-center gap-3 bg-slate-900 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105 duration-200 ease-in-out w-full sm:w-auto">
-                        <!-- Google Play Icon -->
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.84 12.825L19.5 14.34l2.64-1.515-2.64-1.515-2.66 1.515zM4.5 19.395l7.11 4.102L18.72 19.41V9.315L11.61 5.22 4.5 9.3V19.395zM2.01 7.215l9.6-5.535 9.6 5.535v9.585l-9.6 5.535-9.6-5.535v-9.585zM16.84 11.31l-5.23-3-5.23 3-2.64 1.515 7.87 4.545 7.87-4.545-2.64-1.515z"></path></svg>
-                        <span>Download for Android</span>
+                    
+                    <!-- Android Button -->
+                    <a href="https://play.google.com/store/apps/details?id=com.canatest.citizenship" target="_blank" rel="noopener noreferrer"
+                       class="flex items-center justify-center gap-3 bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl shadow-lg transition-all hover:bg-slate-800 hover:-translate-y-1 duration-200 ease-in-out w-full sm:w-auto min-w-[200px]">
+                        <!-- Official Google Play Icon SVG -->
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.00003 3.46416C4.65481 3.82637 4.5 4.39867 4.5 5.17646V18.8236C4.5 19.6014 4.65481 20.1736 5.00003 20.5359L5.05929 20.5925L13.1416 12.5101L13.1953 12L13.1416 11.4899L5.05929 3.40755L5.00003 3.46416Z" fill="#3DDC84"/>
+                            <path d="M16.8995 16.268L13.1416 12.5101L13.1953 12L13.1416 11.4899L16.8995 7.73202L16.9469 7.75932L21.3663 10.2694C22.6288 10.9852 22.6288 12.1627 21.3663 12.8785L16.9469 15.3886L16.8995 16.268Z" fill="#FFD34F"/>
+                            <path d="M13.1417 12.5102L16.8997 16.2681L16.947 16.2408L5.00015 20.536C5.55622 21.1309 6.46788 21.1784 7.42618 20.6358L13.1417 12.5102Z" fill="#FF4F45"/>
+                            <path d="M13.1417 11.4899L7.42618 3.3643C6.46788 2.8217 5.55622 2.86915 5.00015 3.46411L16.8997 7.73206L13.1417 11.4899Z" fill="#3DDC84"/>
+                            <!-- Fallback to white for contrast on dark btn if simplified -->
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 5.17646V18.8236C4.5 20.8936 6.7402 22.1895 8.5342 21.1578L20.5732 14.2343C22.3653 13.2036 22.3653 10.6483 20.5732 9.61763L8.5342 2.69408C6.7402 1.6624 4.5 2.95826 4.5 5.02826V5.17646Z" fill="white"/>
+                        </svg>
+                        <div class="flex flex-col items-start leading-none">
+                            <span class="text-[10px] uppercase opacity-80">Get it on</span>
+                            <span class="text-sm font-bold">Google Play</span>
+                        </div>
                     </a>
-                    <div class="flex items-center justify-center gap-3 bg-slate-100 text-slate-500 font-semibold py-3 px-8 rounded-full shadow-inner w-full sm:w-auto cursor-not-allowed">
-                        <!-- Apple Icon -->
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.825 17.565c-.09.345-.3.66-.615.915-.345.285-.765.435-1.245.435-.495 0-.96-.135-1.395-.405-.435-.27-.795-.645-1.08-1.125-.3-.48-.525-1.005-.675-1.575-.15-.57-.225-1.155-.225-1.755 0-.6.075-1.185.225-1.77.15-.585.375-1.11.675-1.575.3-.48.66-.87 1.11-1.17.45-.3.945-.45 1.485-.45.525 0 1.005.15 1.44.45.435.3.78.69 1.035 1.17.18.315.315.66.405 1.035.09.375.135.75.135 1.125 0 .375-.045.75-.135 1.125-.09.375-.225.72-.405 1.035-.255.48-.6.87-1.035 1.17-.435.3-.915.45-1.44.45-.48 0-.9-.15-1.245-.435-.315-.255-.525-.57-.615-.915h3.045c.495 0 .915.165 1.26.495.345.33.525.75.525 1.26 0 .51-.18.93-.525 1.26-.345.33-.765.495-1.26.495-.51 0-.975-.165-1.395-.495-.42-.33-.765-.765-1.035-1.305-.27-.54-.465-1.17-.585-1.89-.12-.72-.18-1.485-.18-2.295s.06-1.575.18-2.295c.12-.72.315-1.35.585-1.89.27-.54.615-.975 1.035-1.305.42-.33.885-.495 1.395-.495.495 0 .945.15 1.35.45.405.3.735.675.99 1.125.045.075.09.165.135.27.045.105.105.225.18.36h-2.925c-.24 0-.45.075-.63.225-.18.15-.315.345-.405.585-.09.24-.135.495-.135.765 0 .3.06.555.18.765.12.21.285.375.495.495.21.12.45.18.72.18h3.405c.015-.12.015-.24.015-.36 0-.6-.12-1.17-.36-1.71-.24-.54-.57-.99-1.005-1.35-.435-.36-.945-.63-1.53-.81-.585-.18-1.23-.27-1.935-.27-.81 0-1.56.165-2.25.495-.69.33-1.29.795-1.8 1.395-.51.6-.915 1.305-1.215 2.115-.3.81-.45 1.695-.45 2.655 0 .96.15 1.845.45 2.655.3.81.705 1.515 1.215 2.115.51.6 1.11 1.065 1.8 1.395.69.33 1.44.495 2.25.495.705 0 1.35-.09 1.935-.27.585-.18 1.095-.45 1.53-.81.435-.36.765-.81.99-1.35.225-.54.345-1.11.36-1.71h-3.405c-.27 0-.51-.06-.72-.18-.21-.12-.375-.285-.495-.495-.12-.21-.18-.465-.18-.765 0-.27.045-.525.135-.765.09-.24.225-.435.405-.585.18-.15.39-.225.63-.225h2.925c-.075.135-.135.255-.18.36-.045.105-.09.195-.135.27-.255.45-.585.825-.99 1.125-.405.3-1.005.45-1.35.45z"></path></svg>
-                        <span>Coming Soon on iOS</span>
-                    </div>
+
+                    <!-- iOS Button -->
+                    <a href="#" class="flex items-center justify-center gap-3 bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl shadow-lg transition-all hover:bg-slate-800 hover:-translate-y-1 duration-200 ease-in-out w-full sm:w-auto min-w-[200px]">
+                        <!-- Official Apple Icon SVG -->
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.8441 12.1352C17.8322 10.4285 19.2995 9.42657 19.3629 9.38266C18.3976 7.97022 16.9022 7.77797 16.4851 7.75549C15.2289 7.62589 14.0205 8.49752 13.3888 8.49752C12.7441 8.49752 11.7516 7.78096 10.7256 7.80205C9.39045 7.82093 8.16315 8.58316 7.48545 9.75775C6.10398 12.1528 7.14815 15.7196 8.49257 17.671C9.14868 18.6226 9.93046 19.6896 10.9575 19.6517C11.9546 19.6146 12.3364 19.0125 13.5456 19.0125C14.7431 19.0125 15.0883 19.6517 16.1456 19.6335C17.2021 19.6146 17.872 18.6604 18.5205 17.7088C19.2709 16.6111 19.5828 15.5451 19.6015 15.4897C19.5828 15.4811 17.8694 14.8213 17.8441 12.1352ZM14.9961 6.07722C15.5444 5.4116 15.9126 4.48496 15.8117 3.5625C15.0063 3.59524 14.0322 4.09919 13.4561 4.79377C12.9377 5.40474 12.4801 6.35349 12.6006 7.24765C13.497 7.2571 14.4449 6.7588 14.9961 6.07722Z"/>
+                        </svg>
+                        <div class="flex flex-col items-start leading-none">
+                            <span class="text-[10px] uppercase opacity-80">Download on the</span>
+                            <span class="text-sm font-bold">App Store</span>
+                        </div>
+                    </a>
                 </div>
             </div>
             
@@ -121,7 +140,7 @@
                 <div class="relative max-w-2xl mx-auto">
                     <!-- Phone Mockup -->
                     <div class="relative bg-slate-900 rounded-[48px] shadow-2xl p-3">
-                        <div class="aspect-[8.1/18.5] overflow-hidden rounded-[36px]">
+                        <div class="aspect-[9/18.5] overflow-hidden rounded-[36px]">
                             <img src="0.jpg" 
                                  alt="CANA Test home screen showing progress tracking" 
                                  class="w-full h-full object-cover"
@@ -234,11 +253,27 @@
                     <p class="text-slate-600">Easy on the eyes for those late-night study sessions.</p>
                 </div>
 
+                <!-- Feature 10: Weak Spot Radar Analytics -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="bg-brand-red text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Weak Spot Radar Analytics</h3>
+                    <p class="text-slate-600">Get AI-powered insights, readiness scores, and color-coded breakdowns of your performance.</p>
+                </div>
+
+                <!-- Feature 11: Study Streak Tracker -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <div class="bg-brand-red text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Study Streak Tracker</h3>
+                    <p class="text-slate-600">Build consistent habits. Watch your fire streak grow as you study daily.</p>
+                </div>
+
             </div>
         </div>
     </section>
-    
-    <!-- Screenshot Gallery Section -->
     <section id="gallery" class="py-20 md:py-32 overflow-hidden">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
@@ -291,34 +326,54 @@
             <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
         </div>
     </section>
-
-
-    <!-- Final CTA Section -->
-    <section class="py-20 md:py-32">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-brand-red-light rounded-3xl p-10 md:p-20 text-center">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-                    Ready to ace your test?
-                </h2>
-                <p class="max-w-xl mx-auto text-lg md:text-xl text-slate-600 mb-10">
-                    Join thousands of others who passed their Canadian Citizenship Test on the first try. Download CANA Test today.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="httpsa://play.google.com/store/apps/details?id=com.canatest.citizenship" target="_blank" rel="noopener noreferrer"
-                       class="flex items-center justify-center gap-3 bg-slate-900 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105 duration-200 ease-in-out w-full sm:w-auto">
-                        <!-- Google Play Icon -->
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.84 12.825L19.5 14.34l2.64-1.515-2.64-1.515-2.66 1.515zM4.5 19.395l7.11 4.102L18.72 19.41V9.315L11.61 5.22 4.5 9.3V19.395zM2.01 7.215l9.6-5.535 9.6 5.535v9.585l-9.6 5.535-9.6-5.535v-9.585zM16.84 11.31l-5.23-3-5.23 3-2.64 1.515 7.87 4.545 7.87-4.545-2.64-1.515z"></path></svg>
-                        <span>Download for Android</span>
-                    </a>
-                    <div class="flex items-center justify-center gap-3 bg-white text-slate-500 font-semibold py-3 px-8 rounded-full shadow-inner w-full sm:w-auto cursor-not-allowed">
-                        <!-- Apple Icon -->
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.825 17.565c-.09.345-.3.66-.615.915-.345.285-.765.435-1.245.435-.495 0-.96-.135-1.395-.405-.435-.27-.795-.645-1.08-1.125-.3-.48-.525-1.005-.675-1.575-.15-.57-.225-1.155-.225-1.755 0-.6.075-1.185.225-1.77.15-.585.375-1.11.675-1.575.3-.48.66-.87 1.11-1.17.45-.3.945-.45 1.485-.45.525 0 1.005.15 1.44.45.435.3.78.69 1.035 1.17.18.315.315.66.405 1.035.09.375.135.75.135 1.125 0 .375-.045.75-.135 1.125-.09.375-.225.72-.405 1.035-.255.48-.6.87-1.035 1.17-.435.3-.915.45-1.44.45-.48 0-.9-.15-1.245-.435-.315-.255-.525-.57-.615-.915h3.045c.495 0 .915.165 1.26.495.345.33.525.75.525 1.26 0 .51-.18.93-.525 1.26-.345.33-.765.495-1.26.495-.51 0-.975-.165-1.395-.495-.42-.33-.765-.765-1.035-1.305-.27-.54-.465-1.17-.585-1.89-.12-.72-.18-1.485-.18-2.295s.06-1.575.18-2.295c.12-.72.315-1.35.585-1.89.27-.54.615-.975 1.035-1.305.42-.33.885-.495 1.395-.495.495 0 .945.15 1.35.45.405.3.735.675.99 1.125.045.075.09.165.135.27.045.105.105.225.18.36h-2.925c-.24 0-.45.075-.63.225-.18.15-.315.345-.405.585-.09.24-.135.495-.135.765 0 .3.06.555.18.765.12.21.285.375.495.495.21.12.45.18.72.18h3.405c.015-.12.015-.24.015-.36 0-.6-.12-1.17-.36-1.71-.24-.54-.57-.99-1.005-1.35-.435-.36-.945-.63-1.53-.81-.585-.18-1.23-.27-1.935-.27-.81 0-1.56.165-2.25.495-.69.33-1.29.795-1.8 1.395-.51.6-.915 1.305-1.215 2.115-.3.81-.45 1.695-.45 2.655 0 .96.15 1.845.45 2.655.3.81.705 1.515 1.215 2.115.51.6 1.11 1.065 1.8 1.395.69.33 1.44.495 2.25.495.705 0 1.35-.09 1.935-.27.585-.18 1.095-.45 1.53-.81.435-.36.765-.81.99-1.35.225-.54.345-1.11.36-1.71h-3.405c-.27 0-.51-.06-.72-.18-.21-.12-.375-.285-.495-.495-.12-.21-.18-.465-.18-.765 0-.27.045-.525.135-.765.09-.24.225-.435.405-.585.18-.15.39-.225.63-.225h2.925c-.075.135-.135.255-.18.36-.045.105-.09.195-.135.27-.255.45-.585.825-.99 1.125-.405.3-1.005.45-1.35.45z"></path></svg>
-                        <span>Coming Soon on iOS</span>
+        <!-- Final CTA Section -->
+        <section class="py-20 md:py-32">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-brand-red-light rounded-3xl p-10 md:p-20 text-center">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                        Ready to ace your test?
+                    </h2>
+                    <p class="max-w-xl mx-auto text-lg md:text-xl text-slate-600 mb-10">
+                        Join thousands of others who passed their Canadian Citizenship Test on the first try. Download CANA Test today.
+                    </p>
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    
+                        <!-- Android Button -->
+                        <a href="https://play.google.com/store/apps/details?id=com.canatest.citizenship" target="_blank" rel="noopener noreferrer"
+                           class="flex items-center justify-center gap-3 bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl shadow-lg transition-all hover:bg-slate-800 hover:-translate-y-1 duration-200 ease-in-out w-full sm:w-auto min-w-[200px]">
+                            <!-- Official Google Play Icon SVG -->
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.00003 3.46416C4.65481 3.82637 4.5 4.39867 4.5 5.17646V18.8236C4.5 19.6014 4.65481 20.1736 5.00003 20.5359L5.05929 20.5925L13.1416 12.5101L13.1953 12L13.1416 11.4899L5.05929 3.40755L5.00003 3.46416Z" fill="#3DDC84"/>
+                                <path d="M16.8995 16.268L13.1416 12.5101L13.1953 12L13.1416 11.4899L16.8995 7.73202L16.9469 7.75932L21.3663 10.2694C22.6288 10.9852 22.6288 12.1627 21.3663 12.8785L16.9469 15.3886L16.8995 16.268Z" fill="#FFD34F"/>
+                                <path d="M13.1417 12.5102L16.8997 16.2681L16.947 16.2408L5.00015 20.536C5.55622 21.1309 6.46788 21.1784 7.42618 20.6358L13.1417 12.5102Z" fill="#FF4F45"/>
+                                <path d="M13.1417 11.4899L7.42618 3.3643C6.46788 2.8217 5.55622 2.86915 5.00015 3.46411L16.8997 7.73206L13.1417 11.4899Z" fill="#3DDC84"/>
+                                <!-- Fallback to white for contrast on dark btn if simplified -->
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 5.17646V18.8236C4.5 20.8936 6.7402 22.1895 8.5342 21.1578L20.5732 14.2343C22.3653 13.2036 22.3653 10.6483 20.5732 9.61763L8.5342 2.69408C6.7402 1.6624 4.5 2.95826 4.5 5.02826V5.17646Z" fill="white"/>
+                            </svg>
+                            <div class="flex flex-col items-start leading-none">
+                                <span class="text-[10px] uppercase opacity-80">Get it on</span>
+                                <span class="text-sm font-bold">Google Play</span>
+                            </div>
+                        </a>
+    
+                        <!-- iOS Button -->
+                        <a href="#" class="flex items-center justify-center gap-3 bg-slate-900 text-white font-semibold py-3.5 px-6 rounded-xl shadow-lg transition-all hover:bg-slate-800 hover:-translate-y-1 duration-200 ease-in-out w-full sm:w-auto min-w-[200px]">
+                            <!-- Official Apple Icon SVG -->
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.8441 12.1352C17.8322 10.4285 19.2995 9.42657 19.3629 9.38266C18.3976 7.97022 16.9022 7.77797 16.4851 7.75549C15.2289 7.62589 14.0205 8.49752 13.3888 8.49752C12.7441 8.49752 11.7516 7.78096 10.7256 7.80205C9.39045 7.82093 8.16315 8.58316 7.48545 9.75775C6.10398 12.1528 7.14815 15.7196 8.49257 17.671C9.14868 18.6226 9.93046 19.6896 10.9575 19.6517C11.9546 19.6146 12.3364 19.0125 13.5456 19.0125C14.7431 19.0125 15.0883 19.6517 16.1456 19.6335C17.2021 19.6146 17.872 18.6604 18.5205 17.7088C19.2709 16.6111 19.5828 15.5451 19.6015 15.4897C19.5828 15.4811 17.8694 14.8213 17.8441 12.1352ZM14.9961 6.07722C15.5444 5.4116 15.9126 4.48496 15.8117 3.5625C15.0063 3.59524 14.0322 4.09919 13.4561 4.79377C12.9377 5.40474 12.4801 6.35349 12.6006 7.24765C13.497 7.2571 14.4449 6.7588 14.9961 6.07722Z"/>
+                            </svg>
+                            <div class="flex flex-col items-start leading-none">
+                                <span class="text-[10px] uppercase opacity-80">Download on the</span>
+                                <span class="text-sm font-bold">App Store</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            
+        </section>
+    
 
     <!-- Footer -->
     <footer class="bg-slate-50 border-t border-slate-100">
